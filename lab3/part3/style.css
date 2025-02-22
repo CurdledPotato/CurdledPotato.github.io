@@ -84,3 +84,48 @@ header, footer {
     font-style: normal;
 
 }
+
+
+/* The needed typography */
+
+
+html {
+  font-family: lovatolight, serif;
+  font-size: 10px;
+}
+
+
+
+h1, h2 {
+  font-family: josefin_slabbold, sans-serif;
+  letter-spacing: 2px;
+}
+
+
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+
+
+h2 {
+  font-size: 3.2rem;
+}
+
+
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+
+}
