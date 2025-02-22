@@ -1,4 +1,4 @@
-/* General setup */
+/* My General setup */
 
 * {
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   max-width: 1400px;
 }
 
-/* Layout */
+/* The required Layout */
 
 section {
   float: left;
