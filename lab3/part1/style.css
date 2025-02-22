@@ -19,10 +19,19 @@ h2 {
   font-size: 1.5em;
 }
 
+
 .job-title {
   color: #999999;
   font-weight: bold;
 }
+
+
+ul {
+  background-color: #eeeeee;
+  border: 5px solid purple;
+  padding: 4% 4% 5% 5%;
+}
+
 
 a:link,
 a:visited {
