@@ -1,3 +1,12 @@
+/* 
+
+Name: Daniel Mitchell
+File: main.js
+Date: Wednesday April 2 2025
+Description: Lab 4 Part 2 - Challenge: Image Gallery
+
+*/
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
