@@ -20,7 +20,14 @@ const imageFiles = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 
 /* 3. Declaring the alternative text for each image file */
 
-
+const altText = {
+    
+    'pic1.jpg': 'Closeup of a blue human eye',
+    'pic2.jpg': 'Rock formations on a beach',
+    'pic3.jpg': 'Purple flowers in a field',
+    'pic4.jpg': 'Ancient building with pillars',
+    'pic5.jpg': 'River with mountains in the background'
+};
 
 /* 4. Looping through images */
 
