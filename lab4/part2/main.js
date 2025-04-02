@@ -7,21 +7,28 @@ Description: Lab 4 Part 2 - Challenge: Image Gallery
 
 */
 
+/* 1. Selecting the elements for the Image gallery */
+
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
-
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-/* Declaring the array of image filenames */
+/* 2. Declaring the array of image filenames */
 
-/* Declaring the alternative text for each image file */
+const imageFiles = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 
-/* Looping through images */
+/* 3. Declaring the alternative text for each image file */
+
+
+
+/* 4. Looping through images */
 
 const newImage = document.createElement('img');
 newImage.setAttribute('src', xxx);
 newImage.setAttribute('alt', xxx);
 thumbBar.appendChild(newImage);
 
-/* Wiring up the Darken/Lighten button */
+/* 5. Wiring up the Darken/Lighten button */
+
+
