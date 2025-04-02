@@ -1,3 +1,13 @@
+/* 
+
+Name: Daniel Mitchell
+File: main.js
+Date: Wednesday April 2 2025
+Description: Lab 4 Part 1 - Challenge: Silly story generator
+
+*/
+
+
 1. COMPLETE VARIABLE AND FUNCTION DEFINITIONS
 
 const customName = document.getElementById('customname');
