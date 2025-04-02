@@ -32,6 +32,7 @@ const altText = {
 /* 4. Looping through images */
 
 imageFiles.forEach(image => {
+
     const newImage = document.createElement('img');
     newImage.setAttribute('src', `images/${image}`);
     newImage.setAttribute('alt', altText[image]);
@@ -40,6 +41,7 @@ imageFiles.forEach(image => {
 /* 5. Adding click event listener to each thumbnail image */
 
     newImage.addEventListener('click', () => {
+        
         displayedImage.setAttribute('src', newImage.getAttribute('src'));
         displayedImage.setAttribute('alt', newImage.getAttribute('alt'));
     });
@@ -47,3 +49,15 @@ imageFiles.forEach(image => {
 
 /* 6. Wiring up the Darken/Lighten button */
 
+btn.addEventListener('click', () => {
+
+    if (btn.getAttribute('class') === 'dark') {
+        btn.setAttribute('class', 'light');
+        btn.textContent = 'Lighten';
+        overlay.style.backgroundColor = 'rgb(0 0 0 / 50%)';
+    } else {
+        btn.setAttribute('class', 'dark');
+        btn.textContent = 'Darken';
+        overlay.style.backgroundColor = 'rgb(0 0 0 / 0%)';
+    }
+});
