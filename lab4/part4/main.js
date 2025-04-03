@@ -174,3 +174,29 @@ while (balls.length < 25) {
 
 const evilCircle = new EvilCircle(random(0, width), random(0, height));
 
+/* 17. My main animation loop. */
+
+function loop() {
+  ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
+  ctx.fillRect(0, 0, width, height);
+
+  /* 18. Draws and updates the balls if they occur. */
+
+  for (const ball of balls) {
+    if (ball.exists) {
+      ball.draw();
+      ball.update();
+      ball.collisionDetect();
+    }
+  }
+
+  /* 19. Check the collisions for the "EvilCircle". */
+
+  evilCircle.draw();
+  evilCircle.checkBounds();
+  evilCircle.collisionDetect();
+  
+  requestAnimationFrame(loop);
+}
+
+loop();
