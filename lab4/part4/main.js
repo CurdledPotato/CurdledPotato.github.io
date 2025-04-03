@@ -170,3 +170,7 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
+/* 16. This is the "EvilCircle" instance .*/
+
+const evilCircle = new EvilCircle(random(0, width), random(0, height));
+
