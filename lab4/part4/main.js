@@ -47,7 +47,7 @@ class Ball extends Shape {
     this.exists = true;
   }
 
-/* 5. The ball will be drawn on the canvas. */
+/* 6. The ball will be drawn on the canvas. */
 
 draw() {
   if (!this.exists) return;
@@ -57,24 +57,15 @@ draw() {
   ctx.fill();
 }
 
-
+  /* 7. The balls placement has been changed and will now bounce off walls the walls */
+  
   update() {
-    if (this.x + this.size >= width) {
-      this.velX = -Math.abs(this.velX);
+    if (this.x + this.size >= width || this.x - this.size <= 0) {
+      this.velX = -this.velX;
     }
-
-    if (this.x - this.size <= 0) {
-      this.velX = Math.abs(this.velX);
+    if (this.y + this.size >= height || this.y - this.size <= 0) {
+      this.velY = -this.velY;
     }
-
-    if (this.y + this.size >= height) {
-      this.velY = -Math.abs(this.velY);
-    }
-
-    if (this.y - this.size <= 0) {
-      this.velY = Math.abs(this.velY);
-    }
-
     this.x += this.velX;
     this.y += this.velY;
   }
