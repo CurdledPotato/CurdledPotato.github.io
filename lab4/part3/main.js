@@ -93,6 +93,6 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
-/* 7. Start the animation */
+/* 7. Final touch to allow for the animation to begin. */
 
 loop();
