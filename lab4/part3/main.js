@@ -11,7 +11,6 @@ Description: Lab 4 Part 3 - Object building practice: LET'S BOUNCE SOME BALLS!!!
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
-
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
