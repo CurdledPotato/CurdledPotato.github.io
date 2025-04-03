@@ -7,42 +7,56 @@ Description: Lab 4 Part 4 - Challenge: Adding features to our bouncing balls dem
 
 */
 
-// set up canvas
+/* 1. Setting up the canvas. */
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
-
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
-// function to generate random number
+/* 2. My function to create a random number between the min and max. */
 
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// function to generate random RGB color value
+/* 3. The needed function to create the randomized RGB color value. */
 
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-class Ball {
-  constructor(x, y, velX, velY, color, size) {
+/* 4. Classifications for the base shapes. */
+
+class Shape {
+  constructor(x, y, velX, velY) {
     this.x = x;
     this.y = y;
     this.velX = velX;
     this.velY = velY;
+  }
+}
+
+/* 5. Classifications for the balls changing shape. */
+
+class Ball extends Shape {
+  constructor(x, y, velX, velY, color, size) {
+    super(x, y, velX, velY);
     this.color = color;
     this.size = size;
+    this.exists = true;
   }
 
-  draw() {
-    ctx.beginPath();
-    ctx.fillStyle = this.color;
-    ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
-    ctx.fill();
-  }
+/* 5. The ball will be drawn on the canvas. */
+
+draw() {
+  if (!this.exists) return;
+  ctx.beginPath();
+  ctx.fillStyle = this.color;
+  ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+  ctx.fill();
+}
+
 
   update() {
     if (this.x + this.size >= width) {
