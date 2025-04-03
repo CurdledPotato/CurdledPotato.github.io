@@ -143,3 +143,30 @@ class EvilCircle extends Shape {
   }
 }
 
+const balls = [];
+let ballCount = 25;
+const ballCountDisplay = document.createElement('p');
+ballCountDisplay.textContent = `Ball count: ${ballCount}`;
+document.body.appendChild(ballCountDisplay);
+
+/* 14. The ball count will get updated and displayed.*/ 
+
+function updateBallCount() {
+  ballCountDisplay.textContent = `Ball count: ${ballCount}`;
+}
+
+/* 15. Balls get created and added to the array. */
+
+while (balls.length < 25) {
+  const size = random(10, 20);
+  const ball = new Ball(
+    random(size, width - size),
+    random(size, height - size),
+    random(-7, 7),
+    random(-7, 7),
+    randomRGB(),
+    size
+  );
+  balls.push(ball);
+}
+
