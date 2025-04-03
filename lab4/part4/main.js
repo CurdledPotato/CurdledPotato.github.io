@@ -190,7 +190,7 @@ function loop() {
     }
   }
 
-  /* 19. Check the collisions for the "EvilCircle". */
+  /* 19. Checks the collisions for the "EvilCircle". */
 
   evilCircle.draw();
   evilCircle.checkBounds();
