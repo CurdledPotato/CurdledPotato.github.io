@@ -1,3 +1,12 @@
+/* 
+
+Name: Daniel Mitchell
+File: main.js
+Date: Wednesday April 2 2025
+Description: Lab 4 Part 3 - Object building practice: LET'S BOUNCE SOME BALLS!!! 
+
+*/
+
 // set up canvas
 
 const canvas = document.querySelector("canvas");
