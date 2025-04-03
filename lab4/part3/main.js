@@ -93,3 +93,6 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
+/* 7. Start the animation */
+
+loop();
