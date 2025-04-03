@@ -77,3 +77,19 @@ const balls = Array.from({ length: 25 }, () => {
     size
   );
 });
+
+/* Created the loop needed for animations. */
+
+function loop() {
+  ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
+  ctx.fillRect(0, 0, width, height);
+
+  balls.forEach(ball => {
+    ball.draw();
+    ball.update();
+    ball.collisionDetect();
+  });
+
+  requestAnimationFrame(loop);
+}
+
