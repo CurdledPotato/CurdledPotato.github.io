@@ -3,7 +3,7 @@
 Name: Daniel Mitchell
 File: main.js
 Date: Wednesday April 2 2025
-Description: Lab 4 Part 3 - Object building practice: LET'S BOUNCE SOME BALLS!!! 
+Description: Lab 4 Part 4 - Challenge: Adding features to our bouncing balls demo 
 
 */
 
