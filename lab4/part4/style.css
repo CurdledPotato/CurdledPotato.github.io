@@ -23,3 +23,15 @@ h1 {
   color: transparent;
   text-shadow: 0 0 4px white;
 }
+
+/* 1. Adding in the counter ability for the ball counter. */
+
+p {
+  position: absolute;
+  top: 40px; 
+  right: 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 4px black;
+}
