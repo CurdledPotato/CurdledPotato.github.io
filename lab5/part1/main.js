@@ -1,3 +1,12 @@
+/* 
+
+Name: Daniel Mitchell
+File: main.js
+Date: Wednesday April 9 2025
+Description: Lab 5 Part 1 - Challenge: Accessibility troubleshooting 
+
+*/
+
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
