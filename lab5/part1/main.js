@@ -42,3 +42,17 @@ showHideBtn.addEventListener('keydown', function (e) {
     toggleComments();
   }
 });
+
+// 5. The form functionality for comments with validation and the enhanced screen reader.
+
+const form = document.querySelector('.comment-form');
+const nameField = document.querySelector('#name');
+const commentField = document.querySelector('#comment');
+const list = document.querySelector('.comment-container');
+
+// 6. The event listener for the submission of the attach form.
+
+form.onsubmit = function(e) {
+  e.preventDefault();
+  submitComment();
+};
