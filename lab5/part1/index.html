@@ -153,3 +153,35 @@ Description: Lab 5 Part 1 - Challenge: Accessibility troubleshooting
           He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.
         </p>
       </aside>
+
+      <section class="comments"> <!-- 14. The section with comments has a show or hide function and there is a button for accessibility. -->
+        <button class="show-hide" aria-expanded="false">Show comments</button>
+        <div class="comment-wrapper" hidden>
+          <h3>Add comment</h3> <!-- 15. The form for comments. -->
+          <form class="comment-form">
+            <div class="flex-pair">
+              <label for="name">Your name:</label>
+              <input type="text" name="name" id="name" placeholder="Enter your name">
+            </div>
+            <div class="flex-pair">
+              <label for="comment">Your comment:</label>
+              <input type="text" name="comment" id="comment" placeholder="Enter your comment">
+            </div>
+            <div>
+              <input type="submit" value="Submit comment">
+            </div>
+          </form>
+          <h3>Comments</h3> <!-- 16. The submitted comments list.-->
+          <ul class="comment-container">
+            <li>
+              <p><strong>Bob Fossil</strong></p>
+              <p>
+                Oh I am so glad you taught me all about the big brown angry guys in the woods. With their sniffing
+                little noses and their bad attitudes, they can sure be a menace — I was thinking of putting them all in
+                a truck and driving them outta here. I run a zoo, you know.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
