@@ -149,7 +149,9 @@ nav .search {
   color: white;
 }
 
-/* || main layout */
+/* THE MAIN LAYOUT. */
+
+/* 16. The sidebar is beside article using flex. */
 
 main {
   display: flex;
@@ -162,6 +164,8 @@ article {
 .secondary {
   flex: 2;
 }
+
+/* 17. Added the spacing for the footer. */
 
 footer {
   margin-top: 10px;
