@@ -207,12 +207,16 @@ tbody tr:nth-child(odd) {
   background-color: #f0f8ff;
 }
 
-/* styling content images and audio */
+/* CONTENT IMAGES AND AUDIO. */
+
+/* 23. The media needed for the center and block display. */
 
 img, audio {
   display: block;
   margin: 0 auto;
 }
+
+/* 24. The audio player has a set width. */
 
 audio {
   width: 500px;
