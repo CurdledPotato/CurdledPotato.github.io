@@ -171,28 +171,40 @@ footer {
   margin-top: 10px;
 }
 
-/* Table styling */
+/* THE TABLE STYLING. */
+
+/* 18. The style table with the designated borders and spacing. */
 
 table {
   width: 100%;
-  background-color: #dde;
+  background-color: #ffffff;
   border-collapse: collapse;
+  border: 1px solid #ccc;
 }
+
+/* 19. Added the table cells padding & border. */
 
 th, td {
   padding: 10px;
+  border: 1px solid #ccc;
 }
+
+/* 20. The data cells are center aligned. */
 
 td {
   text-align: center;
 }
 
+/* 21. Added a column header background for better visuals.*/
+
 th[scope="col"] {
-  border-bottom: 1px solid black;
+  background-color: #eee;
 }
 
+/* 22. Added a stripe effect so it can be more easily read. */
+
 tbody tr:nth-child(odd) {
-  background-color: #def;
+  background-color: #f0f8ff;
 }
 
 /* styling content images and audio */
