@@ -24,33 +24,41 @@ body {
   background-color: #ffffff;
 }
 
-/* || typography */
+/* THE TYPOGRAPHY. */
 
-font[size="7"], font[size="6"], font[size="5"] {
+/* 4. I used a darker font colour to emphasis the headings. */
+
+h1, h2, h3 {
   font-family: 'Sonsie One', cursive;
-  color: #2a2a2a;
+  color: #222;
 }
+
+/* 5. So the main text elements could be easily read, I used sans-serif font. */
 
 p, input, li, table, label {
   font-family: 'Open Sans Condensed', sans-serif;
-  color: #2a2a2a;
+  color: #111;
 }
 
-font[size="7"] {
+/* 6. The main heading uses large, stylish, and shadowed font for better contrast. */
+
+h1 {
   font-size: 4rem;
   text-align: center;
   color: white;
   text-shadow: 2px 2px 10px black;
 }
 
-font[size="6"] {
+h2 {
   font-size: 3rem;
   text-align: center;
 }
 
-font[size="5"] {
+h3 {
   font-size: 2.2rem;
 }
+
+/* 7. The body text is set to a consistent text size & line height. */
 
 p, li, table {
   font-size: 1.6rem;
