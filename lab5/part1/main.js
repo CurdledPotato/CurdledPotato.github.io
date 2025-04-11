@@ -17,3 +17,18 @@ const commentWrapper = document.querySelector('.comment-wrapper');
 commentWrapper.setAttribute('hidden', true);
 showHideBtn.setAttribute('aria-expanded', 'false');
 showHideBtn.setAttribute('tabindex', '0');
+
+// 3. Added the function to toggle for comment visibility, the ability to hide the accessibility update information.
+
+function toggleComments() {
+  const isVisible = !commentWrapper.hasAttribute('hidden');
+  if (isVisible) {
+    commentWrapper.setAttribute('hidden', true);
+    showHideBtn.textContent = 'Show comments';
+    showHideBtn.setAttribute('aria-expanded', 'false');
+  } else {
+    commentWrapper.removeAttribute('hidden');
+    showHideBtn.textContent = 'Hide comments';
+    showHideBtn.setAttribute('aria-expanded', 'true');
+  }
+}
