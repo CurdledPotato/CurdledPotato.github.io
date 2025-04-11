@@ -32,3 +32,13 @@ function toggleComments() {
     showHideBtn.setAttribute('aria-expanded', 'true');
   }
 }
+
+// 4. Comments can now be toggled using the mouse to point and click while the keyboard can be accessed using enter or spacebar.
+
+showHideBtn.addEventListener('click', toggleComments);
+showHideBtn.addEventListener('keydown', function (e) {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    toggleComments();
+  }
+});
