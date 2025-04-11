@@ -312,3 +312,12 @@ audio {
 .comment-container li p:nth-child(2) {
   flex: 5;
 }
+
+/* FOCUS STYLES. */
+
+/* 36. Added a focus outline for easier reading. */
+
+a:focus, button:focus, input:focus {
+  outline: 3px solid #ff80ff;
+  outline-offset: 2px;
+}
