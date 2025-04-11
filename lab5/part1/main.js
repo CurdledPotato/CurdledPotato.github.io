@@ -2,7 +2,7 @@
 
 Name: Daniel Mitchell
 File: main.js
-Date: Wednesday April 9 2025
+Date: Wednesday April 11 2025
 Description: Lab 5 Part 1 - Challenge: Accessibility troubleshooting 
 
 */
