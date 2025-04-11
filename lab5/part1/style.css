@@ -65,11 +65,15 @@ p, li, table {
   line-height: 1.5;
 }
 
-/* || header layout */
+/* THE HEADER LAYOUT. */
 
-div[class="nav"], article, footer, .secondary {
-  background-color: green;
+/* 8. The backgrounds colour for the layout containers. */
+
+nav, article, footer, .secondary {
+  background-color: #f8f8f8;
 }
+
+/* 9. Added adding content so content can be more easily read with improved spacing. */
 
 article, footer, .secondary {
   padding: 10px 30px;
@@ -79,42 +83,54 @@ article {
   margin-right: 10px;
 }
 
-div[class="nav"] {
+/* 10. The nav bar uses the flex layout and color scheme. */
+
+nav {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #004466;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
 }
 
-div[class="nav"] ul {
+/* 11. The lists layout on the nav menu. */
+
+nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
   display: flex;
 }
 
-div[class="nav"] li {
+/* 12. The nav items are spaced evenly. */
+
+nav li {
   display: inline;
   text-align: center;
   flex: 1;
 }
 
-div[class="nav"] a {
+/* 13. Making the nav links easier to read. */
+
+nav a {
   display: inline-block;
   font-size: 2rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #ffffff;
 }
 
-div[class="nav"] .search {
+/* 14. The search form is aligned in the nav bar. */
+
+nav .search {
   flex: 1;
   display: flex;
   align-items: center;
   height: 100%;
   padding: 0 2em;
 }
+
+/* 15. The input fields for search are styled for visibility. */
 
 .search input {
   font-size: 1.6rem;
