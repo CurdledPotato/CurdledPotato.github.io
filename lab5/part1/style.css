@@ -321,3 +321,32 @@ a:focus, button:focus, input:focus {
   outline: 3px solid #ff80ff;
   outline-offset: 2px;
 }
+
+/* Sr-only CLASS */
+
+/* 37. Allows me to hide the element but still have it accessible to readers. */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 38. Allows the element to be shown when focused on.*/
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
