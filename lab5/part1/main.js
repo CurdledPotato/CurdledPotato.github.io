@@ -56,3 +56,31 @@ form.onsubmit = function(e) {
   e.preventDefault();
   submitComment();
 };
+
+// 7. The submit & display function for comments.
+
+function submitComment() {
+  const nameValue = nameField.value.trim();
+  const commentValue = commentField.value.trim();
+
+  if (!nameValue || !commentValue) { // 8. The validation to make sure that both fields are filled.
+    alert('Please fill in both your name and your comment.');
+    return;
+  }
+
+  const listItem = document.createElement('li'); // 9. For the creation of a new list item & paragraphs for comments.
+  const namePara = document.createElement('p');
+  const commentPara = document.createElement('p');
+
+  namePara.textContent = nameValue; // 10. Elements will have their text content assigned and aria-live will provide new comments to the readers.
+  commentPara.textContent = commentValue;
+  commentPara.setAttribute('aria-live', 'polite');
+
+  listItem.appendChild(namePara); // 11. A new comment will append to the list.
+  listItem.appendChild(commentPara);
+  list.appendChild(listItem);
+
+  nameField.value = ''; // 12. The fields will be reset.
+  commentField.value = '';
+  nameField.focus();
+}
