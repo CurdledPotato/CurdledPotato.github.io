@@ -1,19 +1,27 @@
-/* || General setup */
+/* THE GENERAL SETUP. */
+
+/* 1. The reset for the default margins and paddings. */
 
 html, body {
   margin: 0;
   padding: 0;
 }
 
+/* 2. Setting the base font size and background colour. */
+
 html {
   font-size: 10px;
-  background-color: #dde;
+  background-color: #ffffff;
 }
+
+/* 3. Setting the width of the body and the set default text & the background colours. */
 
 body {
   width: 80%;
   min-width: 1024px;
   margin: 0 auto;
+  color: #111;
+  background-color: #ffffff;
 }
 
 /* || typography */
