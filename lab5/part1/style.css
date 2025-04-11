@@ -222,33 +222,48 @@ audio {
   width: 500px;
 }
 
-/* Comments styling */
+/* COMMENTS STYLING. */
+
+/* 25. Added the styling for comments section. */
 
 .comments {
-  background-color: #def;
+  background-color: #e6f0fa;
   padding: 10px;
 }
 
+/* 26. Added the styling for the toggle button. */
+
 .show-hide {
   cursor: pointer;
+  text-align: center;
+  width: 150px;
+  font-size: 1.6rem;
+  line-height: 32px;
+  background: #333;
+  border: 0;
+  color: white;
 }
 
-.comments font[size="6"] {
+/* 27. Added the styling for the subheading in the comments. */
+
+.comments h3 {
   font-size: 2rem;
 }
 
-.comments font[size="6"]:nth-of-type(2) {
-  margin-bottom: 0;
-}
+/* 28. Added the layout spacing for the comment form. */
 
 .comment-form {
   margin-bottom: 3rem;
 }
 
+/* 29. Added the pair labels & the inputs with flex layout. */
+
 .comment-form .flex-pair {
   display: flex;
   padding: 0 3rem 1rem;
 }
+
+/* 30. Added the labels alignment & width. */
 
 .comment-form label {
   align-self: center;
@@ -256,32 +271,25 @@ audio {
   text-align: right;
 }
 
+/* 31. Added the input spacing and flex. */
+
 .comment-form input {
   margin-left: 1rem;
   flex: 6;
 }
 
-.show-hide {
-  text-align: center;
-  width: 150px;
-}
-
-.comment-form input, .comment-form label, .show-hide {
-  font-size: 1.6rem;
-  line-height: 32px;
-}
-
-.comment-form input[type="submit"], .show-hide {
-  background: #333;
-  border: 0;
-  color: white;
-}
+/* 32. Added the submit button style for the form. */
 
 .comment-form input[type="submit"] {
   width: 30%;
   display: block;
   margin: 0 auto;
+  background: #333;
+  color: white;
+  border: 0;
 }
+
+/* 33. Added the layout for the comment list. */
 
 .comment-container {
   margin-top: 0;
@@ -292,10 +300,14 @@ audio {
   display: flex;
 }
 
+/* 34. I bolded the commenter name. */
+
 .comment-container li p:nth-child(1) {
   flex: 1;
   font-weight: bold;
 }
+
+/* 35. Making the comment text take up more space. */
 
 .comment-container li p:nth-child(2) {
   flex: 5;
