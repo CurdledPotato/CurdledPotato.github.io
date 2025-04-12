@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>Accessibility assessment</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-</head>
+  
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
 <!--
 
 Name: Daniel Mitchell
@@ -16,30 +19,28 @@ Description: Lab 5 Part 1 - Challenge: Accessibility troubleshooting
 
 -->
 
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
+</head>
 
-  <body>
-    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
-  
-    <header class="header">
-      <h1>Welcome to our wildlife website</h1>
-    </header>
-  
-    <nav class="nav"> <!-- 1. My main navigation menu with navigation links and the search form with the accessible label. -->
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our team</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Blog</a></li>
-      </ul>
-      <form class="search">
-        <label for="search-query" class="sr-only">Search</label>
-        <input type="search" id="search-query" name="q" placeholder="Search query">
-        <input type="submit" value="Go!">
-      </form>
-    </nav>
+<body>
+  <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+  <header class="header">
+    <h1>Welcome to our wildlife website</h1>
+  </header>
+
+  <nav> <!-- 1. My main navigation menu with navigation links and the search form with the accessible label. -->
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Our team</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+    <form class="search">
+      <label for="search-query" class="sr-only">Search</label>
+      <input type="search" id="search-query" name="q" placeholder="Search query">
+      <input type="submit" value="Go!">
+    </form>
+  </nav>
 
   <main id="main-content"> <!-- 2. The area that contains the main content with the ID for Skip to content link, the title of the article and the author. -->
     <article>
